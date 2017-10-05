@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Apti</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="slide1_desc">Aptitude is inborn potential to do certain kinds of work. Brush it up!</string>
+    <string name="slide1_title"> Hello and Welcome</string>
+    <string name="start">GOT IT</string>
+    <string name="drawer_open">open_drawer</string>
+    <string name="drawer_close">close_drawer</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+</resources>

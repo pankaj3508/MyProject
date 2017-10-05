@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#52919A</color>
+    <color name="colorPrimaryDark">#54a3ad</color>
+    <color name="colorAccent">#54a3ad</color>
+
+    <color name="slide1_bg">#52919A</color>
+    <color name="slide2_bg">#569aa3</color>
+    <color name="slide3_bg">#54a3ad</color>
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#44787f</color>
+    <color name="dot_dark_screen2">#44787f</color>
+    <color name="dot_dark_screen3">#44787f</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#77d8e5</color>
+    <color name="dot_light_screen2">#77d8e5</color>
+    <color name="dot_light_screen3">#77d8e5</color>
+
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+
+    </array>
+
+    <color name="black_overlay">#66000000</color>
+</resources>
