@@ -17,9 +17,14 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".HomePage"
+            android:name=".activity.HomePage"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_fullscreen"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".activity.categories"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_categories"
             android:theme="@style/FullscreenTheme"></activity>
     </application>
 

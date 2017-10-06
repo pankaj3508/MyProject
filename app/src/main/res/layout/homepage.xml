@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-
+        android:background="#f8f8f8"
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin">
 
@@ -28,6 +28,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:id="@+id/apt"
             android:orientation="vertical"
             android:gravity="center">
             <ImageView
@@ -49,6 +50,7 @@
             android:background="@drawable/vertical_line_dotted"
             android:layerType="software"/>
         <LinearLayout
+            android:id="@+id/logical"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -81,6 +83,7 @@
         android:layout_weight="1"
             android:orientation="horizontal">
         <LinearLayout
+            android:id="@+id/verbal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -109,6 +112,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1">
                 <LinearLayout
+                    android:id="@+id/puzzle"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -149,6 +153,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1">
                 <LinearLayout
+                    android:id="@+id/interview"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -178,6 +183,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1">
                 <LinearLayout
+                    android:id="@+id/video"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -212,6 +218,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1">
             <LinearLayout
+                android:id="@+id/books"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -236,6 +243,7 @@
                 android:background="@drawable/vertical_line_dotted"
                 android:layerType="software"/>
             <LinearLayout
+                android:id="@+id/extra"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
