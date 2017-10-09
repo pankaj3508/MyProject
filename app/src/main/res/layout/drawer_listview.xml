@@ -24,6 +24,7 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textColor="#000"
             android:textSize="13sp"
+            android:textStyle="bold"
             android:id="@+id/drawer_text"/>
         <ImageView
             android:layout_width="wrap_content"

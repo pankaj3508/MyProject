@@ -4,6 +4,12 @@
     <string name="skip">Skip</string>
     <string name="slide1_desc">Aptitude is inborn potential to do certain kinds of work. Brush it up!</string>
     <string name="slide1_title"> Hello and Welcome</string>
+
+    <string name="slide2_desc">Knowing how to put together a strong answer to the most common interview questions is obviously key to landing a job.</string>
+    <string name="slide2_title">Interview Questions</string>
+
+    <string name="slide3_title">Video Tutorial</string>
+    <string name="slide3_desc"> Video tutorials of all topics from  top Youtube channels.  </string>
     <string name="start">GOT IT</string>
     <string name="drawer_open">open_drawer</string>
     <string name="drawer_close">close_drawer</string>

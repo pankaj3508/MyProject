@@ -39,15 +39,15 @@ public class HomePage extends AppCompatActivity {
         drawerItems=new ArrayList<>();
 
 
-        drawerItems.add(new DrawerItem("Bookmarks",R.drawable.about));
-        drawerItems.add(new DrawerItem("Notifications",R.drawable.about));
-        drawerItems.add(new DrawerItem("Settings",R.drawable.about));
-        drawerItems.add(new DrawerItem("Share",R.drawable.about));
-        drawerItems.add(new DrawerItem("Feedback",R.drawable.about));
-        drawerItems.add(new DrawerItem("Rate Us",R.drawable.about));
-        drawerItems.add(new DrawerItem("Theme",R.drawable.about));
-        drawerItems.add(new DrawerItem("Help",R.drawable.about));
-        drawerItems.add(new DrawerItem("Check for Update",R.drawable.about));
+        drawerItems.add(new DrawerItem("Bookmarks",R.drawable.bookmark));
+        drawerItems.add(new DrawerItem("Notifications",R.drawable.notification));
+        drawerItems.add(new DrawerItem("Settings",R.drawable.settings));
+        drawerItems.add(new DrawerItem("Share",R.drawable.share));
+        drawerItems.add(new DrawerItem("Feedback",R.drawable.feedback));
+        drawerItems.add(new DrawerItem("Rate Us",R.drawable.rateus));
+        drawerItems.add(new DrawerItem("Theme",R.drawable.theme));
+        drawerItems.add(new DrawerItem("Help",R.drawable.help));
+        drawerItems.add(new DrawerItem("Check for Update",R.drawable.update));
         mDrawerListView.setAdapter(new CustomDrawerAdapter(this,drawerItems));
 
         mDrawer = (DrawerLayout) findViewById(R.id.drawer_layout);

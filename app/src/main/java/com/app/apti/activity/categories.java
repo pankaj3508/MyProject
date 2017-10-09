@@ -1,6 +1,9 @@
 package com.app.apti.activity;
 
 import android.annotation.SuppressLint;
+import android.app.Fragment;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -22,10 +25,26 @@ public class categories extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setTitle(getIntent().getStringExtra("category").toString());
+        getSupportActionBar().setElevation(0);
+        String s=getIntent().getStringExtra("category").toString();
+        getSupportActionBar().setTitle(s);
         setContentView(R.layout.activity_categories);
+        switch(s)
+        {
+            case "Aptitude": aptitude();
+                break;
+            default:
 
+        }
 
+    }
+    private void aptitude()
+    {
+        Fragment f=new Aptitude();
+        FragmentManager fragmentManager=getFragmentManager();
+        FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.frame,f);
+        fragmentTransaction.commit();
     }
 
     @Override
