@@ -33,6 +33,8 @@ public class categories extends AppCompatActivity {
         {
             case "Aptitude": aptitude();
                 break;
+            case "Logical Reasoning":logical();
+                break;
             default:
 
         }
@@ -46,6 +48,18 @@ public class categories extends AppCompatActivity {
         fragmentTransaction.replace(R.id.frame,f);
         fragmentTransaction.commit();
     }
+
+
+
+    private void logical()
+    {
+        Fragment f=new Logical();
+        FragmentManager fragmentManager=getFragmentManager();
+        FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.frame,f);
+        fragmentTransaction.commit();
+    }
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

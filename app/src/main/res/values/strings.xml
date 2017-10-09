@@ -19,5 +19,68 @@
     <string name="dummy_content">DUMMY\nCONTENT</string>
 
     <string name="title_activity_categories">categories</string>
+    
+    
+    <string-array name="aptitude">
+        <item>Age</item>
+        <item>Alligation or mixture</item>
+        <item>Area</item>
+        <item>Average</item>
+        <item>Bankers discount</item>
+        <item>boats and streams</item>
+        <item>calendar</item>
+        <item>compound interest</item>
+        <item>chain rule</item>
+        <item>clock</item>
+        <item>decimal fractions</item>
+        <item>H.C.F and L.C.M</item>
+        <item>height and distance</item>
+        <item>logarithm</item>
+        <item>problems on numbers</item>
+        <item>partnerships</item>
+        <item>percentage</item>
+        <item>permutations and combinations</item>
+        <item>pipes and cistern</item>
+        <item>probability</item>
+        <item>profit and loss</item>
+        <item>races and games</item>
+        <item>ratio and proportion</item>
+        <item>series - odd man out</item>
+        <item>series - find missing number</item>
+        <item>simple interest</item>
+        <item>simplification</item>
+        <item>square root and cube root</item>
+        <item>stocks and shares</item>
+        <item>surds and indices</item>
+        <item>time and distance</item>
+        <item>trains</item>
+        <item>true discount</item>
+        <item>volume and surface area</item>
+        <item>numbers</item>
+
+    </string-array>
+
+
+
+    <string-array name="Logical">
+        <item>Number Series</item>
+        <item>Essential Part</item>
+        <item>Logical Problems</item>
+        <item>Assumptions</item>
+        <item>Theme Detection</item>
+        <item>Logical Detection</item>
+        <item>Symbol Series</item>
+        <item>Analogies</item>
+        <item>Making Judgments</item>
+        <item>Logic Games</item>
+        <item>Course of Action</item>
+        <item>Cause and Effect</item>
+        <item>Verbal Classification</item>
+        <item>Artificial Language</item>
+        <item>Verbal Reasoning</item>
+        <item>Analysing Arguments</item>
+        <item>Statement and Conclusion</item>
+        <item>Statement and Argument</item>
+    </string-array>
 
 </resources>

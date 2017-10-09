@@ -22,7 +22,7 @@
             android:layout_gravity="center"
             android:paddingLeft="20dp"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textColor="#000"
+            android:textColor="#434343"
             android:textSize="13sp"
             android:textStyle="bold"
             android:id="@+id/drawer_text"/>
@@ -31,6 +31,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:paddingLeft="15dp"
+            android:alpha="0.7"
             android:id="@+id/drawer_image"/>
     </LinearLayout>
         <View

@@ -17,18 +17,18 @@ import com.app.apti.R;
  * Created by pankajjoshi on 9/10/17.
  */
 
-public class Aptitude extends Fragment {
+public class Logical extends Fragment {
+
 
     LinearLayout formula,problem,tricks,test;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         ((AppCompatActivity) getActivity()).getSupportActionBar().show();
-        View v=inflater.inflate(R.layout.aptitude_category,container,false);
-        formula=(LinearLayout)v.findViewById(R.id.formula);
-        problem=(LinearLayout)v.findViewById(R.id.problems);
-        tricks=(LinearLayout)v.findViewById(R.id.tricks);
-        test=(LinearLayout)v.findViewById(R.id.test);
-
+        View v=inflater.inflate(R.layout.logical_category,container,false);
+        formula=(LinearLayout)v.findViewById(R.id.formula_logical);
+        problem=(LinearLayout)v.findViewById(R.id.problems_logical);
+        tricks=(LinearLayout)v.findViewById(R.id.tricks_logical);
+        test=(LinearLayout)v.findViewById(R.id.test_logical);
 
         formula.setOnClickListener(new View.OnClickListener() {
             @Override

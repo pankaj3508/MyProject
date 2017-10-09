@@ -14,7 +14,7 @@
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:background="@drawable/aptitiude2"
+                android:background="@drawable/logic2"
                 android:alpha="0.7"/>
         </LinearLayout>
 
@@ -31,7 +31,7 @@
                 android:textStyle="bold"
                 android:textSize="20dp"
                 android:paddingRight="20dp"
-                android:text=" Aptitude Preparation"/>
+                android:text=" Logical Reasoning "/>
         </LinearLayout>
 
     </FrameLayout>
@@ -49,7 +49,7 @@
             android:background="#A8C7C9"
             android:orientation="horizontal">
             <LinearLayout
-                android:id="@+id/formula"
+                android:id="@+id/formula_logical"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -75,7 +75,7 @@
                 android:background="#92b8ba"
                 />
             <LinearLayout
-                android:id="@+id/problems"
+                android:id="@+id/problems_logical"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:gravity="center"
@@ -103,7 +103,7 @@
             android:layout_weight="1"
             android:background="#C7D6DB">
             <LinearLayout
-                android:id="@+id/tricks"
+                android:id="@+id/tricks_logical"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:gravity="center"
@@ -129,7 +129,7 @@
                 android:background="#b9cbd1"
                 />
             <LinearLayout
-                android:id="@+id/test"
+                android:id="@+id/test_logical"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:gravity="center"
