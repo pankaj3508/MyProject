@@ -24,7 +24,7 @@
                 android:alpha="0.7"
                 android:id="@+id/topiclist_image"/>
             <TextView
-                android:layout_width="185dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:paddingLeft="15dp"

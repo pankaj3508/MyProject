@@ -35,10 +35,16 @@ public class Topic extends Fragment {
             topicnames = getResources().getStringArray(R.array.Logical);
             imagenames=getResources().obtainTypedArray(R.array.logical_img);
         }
+        else if(category.equals("Verbal"))
+        {
+            topicnames=getResources().getStringArray(R.array.verbal);
+            imagenames=getResources().obtainTypedArray(R.array.verbal_img);
+        }
 
         for(int i=0;i<topicnames.length;i++)
         {
             topicnames[i]=topicnames[i].toUpperCase();
+
         }
         topiclist=(ListView)v.findViewById(R.id.topiclist);
         topiclist.setAdapter(new CustomTopicAdapter(getActivity(),topicnames,imagenames));

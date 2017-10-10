@@ -25,6 +25,11 @@
             android:name=".activity.categories"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_categories"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".activity.Feedback"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_feedback"
             android:theme="@style/FullscreenTheme"></activity>
     </application>
 

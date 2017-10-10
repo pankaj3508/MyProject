@@ -35,6 +35,7 @@ public class categories extends AppCompatActivity {
                 break;
             case "Logical Reasoning":logical();
                 break;
+            case "Verbal": verbal();
             default:
 
         }
@@ -60,6 +61,14 @@ public class categories extends AppCompatActivity {
         fragmentTransaction.commit();
     }
 
+    private void verbal()
+    {
+        Fragment f=new Topic();
+        FragmentManager fragmentManager=getFragmentManager();
+        FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.frame,f);
+        fragmentTransaction.commit();
+    }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

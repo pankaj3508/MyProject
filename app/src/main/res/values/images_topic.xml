@@ -62,4 +62,27 @@
         <item>@drawable/arguement</item>
     </integer-array>
 
+
+    <integer-array name="verbal_img">
+        <item>@drawable/error</item>
+        <item>@drawable/antonym</item>
+        <item>@drawable/spelling</item>
+        <item>@drawable/antonym</item>
+        <item>@drawable/words</item>
+        <item>@drawable/sentence</item>
+        <item>@drawable/alphabet</item>
+        <item>@drawable/sent</item>
+        <item>@drawable/sentence</item>
+        <item>@drawable/bookmark</item>
+        <item>@drawable/sent</item>
+        <item>@drawable/paragraph</item>
+        <item>@drawable/test</item>
+        <item>@drawable/comprehension</item>
+        <item>@drawable/verba</item>
+        <item>@drawable/speech</item>
+        <item>@drawable/voice   </item>
+        <item>@drawable/cassette</item>
+        <item>@drawable/words</item>
+    </integer-array>
+
 </resources>

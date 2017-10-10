@@ -19,8 +19,8 @@
     <string name="dummy_content">DUMMY\nCONTENT</string>
 
     <string name="title_activity_categories">categories</string>
-    
-    
+
+
     <string-array name="aptitude">
         <item>Age</item>
         <item>Alligation or mixture</item>
@@ -61,7 +61,6 @@
     </string-array>
 
 
-
     <string-array name="Logical">
         <item>Number Series</item>
         <item>Essential Part</item>
@@ -83,5 +82,29 @@
         <item>Statement and Argument</item>
     </string-array>
 
+
+    <string-array name="verbal">
+        <item>Spotting Errors</item>
+        <item>Antonyms</item>
+        <item>Spellings</item>
+        <item>Synonyms</item>
+        <item>Selecting Words</item>
+        <item>Sentence Formation</item>
+        <item>Ordering of Words</item>
+        <item>Sentence Correction</item>
+        <item>Sentence Improvement</item>
+        <item>Completing Statements</item>
+        <item>Ordering of Sentences</item>
+        <item>Paragraph Formation</item>
+        <item>Closet Test</item>
+        <item>Comprehension</item>
+        <item>Verbal Analogies</item>
+        <item>Change of Speech</item>
+        <item>Change of Voice</item>
+        <item>Idioms and Phrases</item>
+        <item>One Word Substitutes</item>
+    </string-array>
+
+    <string name="title_activity_feedback">Feedback</string>
 
 </resources>

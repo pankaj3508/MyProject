@@ -1,7 +1,10 @@
 package com.app.apti.activity;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.content.res.Configuration;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -9,6 +12,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
@@ -29,6 +33,7 @@ public class HomePage extends AppCompatActivity {
     private ListView mDrawerListView;
     private LinearLayout apt,logical,verbal,puzzle,video,interview,books,extra;
     List<DrawerItem> drawerItems;
+    Dialog dialog=null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -73,6 +78,17 @@ public class HomePage extends AppCompatActivity {
         mDrawerListView.setOnItemClickListener(new ListView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                switch(i)
+                {
+                    case 3: share();
+                        break;
+                    case 4: Intent intent=new Intent(HomePage.this, Feedback.class);
+                        startActivity(intent);
+                        break;
+                    case 5: rateus();
+                        break;
+                    default:
+                }
 
                 //start coding here
                 mDrawer.closeDrawer(GravityCompat.START);
@@ -184,4 +200,45 @@ public class HomePage extends AppCompatActivity {
         mDrawerToggle.onConfigurationChanged(newConfig);
     }
 
+
+    public void rateus()
+    {
+        dialog=new Dialog(HomePage.this);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setContentView(R.layout.rating);
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        dialog.setCancelable(true);
+        LinearLayout sure,cancel;
+
+        sure=(LinearLayout)dialog.findViewById(R.id.sure);
+        cancel=(LinearLayout)dialog.findViewById(R.id.later);
+        sure.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                System.out.println("hello");
+            }
+        });
+
+        cancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialog.dismiss();
+            }
+        });
+
+
+        dialog.show();
+    }
+
+
+    public void share()
+    {
+        String shareBody = "https://play.google.com/store/apps/details?";
+        Intent sharing=new Intent(Intent.ACTION_SEND);
+        sharing.setType("text/plain");
+        sharing.putExtra(android.content.Intent.EXTRA_SUBJECT, "Prepare aptitude and for interviews");
+
+        sharing.putExtra(android.content.Intent.EXTRA_TEXT, shareBody);
+        startActivity(Intent.createChooser(sharing, "Share via"));
+    }
 }
