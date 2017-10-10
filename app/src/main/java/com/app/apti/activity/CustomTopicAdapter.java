@@ -2,6 +2,7 @@ package com.app.apti.activity;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.res.TypedArray;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,12 +19,13 @@ public class CustomTopicAdapter extends BaseAdapter {
 
     private Context context;
     String []title;
-    int []img;
+    TypedArray img;
     private static LayoutInflater inflater=null;
 
-    public CustomTopicAdapter(Activity topic, String[] topicnames) {
+    public CustomTopicAdapter(Activity topic, String[] topicnames,TypedArray images) {
         context=topic;
         title=topicnames;
+        img=images;
         inflater=(LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
 
@@ -49,9 +51,9 @@ public class CustomTopicAdapter extends BaseAdapter {
             v=inflater.inflate(R.layout.topic_list,null);
 
         TextView tv=(TextView)v.findViewById(R.id.topiclist_text);
-        ImageView img=(ImageView)v.findViewById(R.id.topiclist_image);
+        ImageView im=(ImageView)v.findViewById(R.id.topiclist_image);
         tv.setText(title[i]);
-       // img.setImageResource(img[i]);
+       im.setImageResource(img.getResourceId(i,-1));
         return v;
     }
 }

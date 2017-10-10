@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer-array name="aptitude_img">
+        <item>@drawable/age</item>
+        <item>@drawable/mixture</item>
+        <item>@drawable/area</item>
+        <item>@drawable/average</item>
+        <item>@drawable/bank</item>
+        <item>@drawable/boat</item>
+        <item>@drawable/calendar</item>
+        <item>@drawable/compound</item>
+        <item>@drawable/chain</item>
+        <item>@drawable/clock</item>
+        <item>@drawable/fraction</item>
+        <item>@drawable/hcf</item>
+        <item>@drawable/height</item>
+        <item>@drawable/log</item>
+        <item>@drawable/number</item>
+        <item>@drawable/partnership</item>
+        <item>@drawable/percentage</item>
+        <item>@drawable/combination</item>
+        <item>@drawable/pipe</item>
+        <item>@drawable/probability</item>
+        <item>@drawable/loss</item>
+        <item>@drawable/race</item>
+        <item>@drawable/ratio</item>
+        <item>@drawable/number</item>
+        <item>@drawable/missing</item>
+        <item>@drawable/interest</item>
+        <item>@drawable/simplification</item>
+        <item>@drawable/root</item>
+        <item>@drawable/stocks</item>
+        <item>@drawable/surds</item>
+        <item>@drawable/time</item>
+        <item>@drawable/train</item>
+        <item>@drawable/discount</item>
+        <item>@drawable/area</item>
+        <item>@drawable/number2</item>
+
+
+    </integer-array>
+
+    <integer-array name="logical_img">
+        <item>@drawable/number</item>
+        <item>@drawable/essential</item>
+        <item>@drawable/problem</item>
+        <item>@drawable/assumption</item>
+        <item>@drawable/themes</item>
+        <item>@drawable/logical_detection</item>
+        <item>@drawable/number</item>
+        <item>@drawable/analogies</item>
+        <item>@drawable/judgement</item>
+        <item>@drawable/race</item>
+        <item>@drawable/action</item>
+        <item>@drawable/effect</item>
+        <item>@drawable/alphabet</item>
+        <item>@drawable/artificial</item>
+        <item>@drawable/alphabet</item>
+        <item>@drawable/arguement</item>
+        <item>@drawable/statement</item>
+        <item>@drawable/arguement</item>
+    </integer-array>
+
+</resources>
