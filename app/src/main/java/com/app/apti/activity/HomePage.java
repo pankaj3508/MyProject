@@ -1,6 +1,7 @@
 package com.app.apti.activity;
 
 import android.app.Dialog;
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.graphics.Color;
@@ -16,6 +17,7 @@ import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.app.apti.R;
 
@@ -239,6 +241,12 @@ public class HomePage extends AppCompatActivity {
         sharing.putExtra(android.content.Intent.EXTRA_SUBJECT, "Prepare aptitude and for interviews");
 
         sharing.putExtra(android.content.Intent.EXTRA_TEXT, shareBody);
-        startActivity(Intent.createChooser(sharing, "Share via"));
+        try {
+            startActivity(Intent.createChooser(sharing, "Share via"));
+        }
+        catch (ActivityNotFoundException e)
+        {
+            Toast.makeText(getApplication(),"There is no email/message client in your device",Toast.LENGTH_SHORT).show();
+        }
     }
 }

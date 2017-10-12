@@ -2,6 +2,8 @@ package com.app.apti.activity;
 
 
 import android.app.Fragment;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -9,6 +11,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.app.apti.R;
@@ -17,7 +20,7 @@ import com.app.apti.R;
  * Created by pankajjoshi on 9/10/17.
  */
 
-public class Topic extends Fragment {
+public class Topic extends Fragment implements AdapterView.OnItemClickListener {
     private ListView topiclist;
     private String []topicnames;
     private TypedArray imagenames;
@@ -48,6 +51,21 @@ public class Topic extends Fragment {
         }
         topiclist=(ListView)v.findViewById(R.id.topiclist);
         topiclist.setAdapter(new CustomTopicAdapter(getActivity(),topicnames,imagenames));
+        topiclist.setOnItemClickListener(this);
         return v;
+    }
+
+    @Override
+    public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
+        Fragment f=new Question();
+        Bundle b=new Bundle();
+        b.putString("topic",topicnames[i]);
+        f.setArguments(b);
+        FragmentManager fragmentManager=getActivity().getFragmentManager();
+        FragmentTransaction ft=fragmentManager.beginTransaction();
+        ft.replace(R.id.frame,f);
+        ft.addToBackStack(null);
+        ft.commit();
     }
 }

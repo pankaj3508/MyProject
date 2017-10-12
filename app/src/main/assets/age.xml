@@ -1,0 +1,148 @@
+<main><question>
+<que>
+ The sum of three consecutive integers is 102. Find the lowest of the three?
+</que>
+<option1>
+40
+</option1>
+<option2>
+53
+</option2>
+<option3>
+29
+</option3>
+<option4>
+33
+</option4>
+<answer>
+33
+</answer>
+<explanation>
+Explanation:
+Three consecutive numbers can be taken as (P - 1), P, (P + 1).
+So, (P - 1) + P + (P + 1) = 102
+3P = 102 => P = 34.
+The lowest of the three = (P - 1) = 34 - 1 = 33. 
+
+</explanation>
+</question>
+<question>
+<que>
+ The sum of the two digits of a number is 10. If the number is subtracted from the number obtained by reversing its digits, the result is 54. Find the number?
+</que>
+<option1>
+34
+</option1>
+<option2>
+28
+</option2>
+<option3>
+12
+</option3>
+<option4>
+17
+</option4>
+<answer>
+28
+</answer>
+<explanation>
+Explanation:
+Any two digit number can be written as (10P + Q), where P is the digit in the tens place and Q is the digit in the units place.
+P + Q = 10 ----- (1)
+(10Q + P) - (10P + Q) = 54
+9(Q - P) = 54
+(Q - P) = 6 ----- (2)
+Solve (1) and (2) P = 2 and Q = 8
+The required number is = 28
+
+
+</explanation>
+</question>
+<question>
+<que>
+ The sum of three consecutive even numbers is 42. Find the middle number of the three?
+</que>
+<option1>
+14
+</option1>
+<option2>
+16
+</option2>
+<option3>
+18
+</option3>
+<option4>
+24
+</option4>
+<answer>
+14
+</answer>
+<explanation>
+Explanation:
+Three consecutive even numbers (2P - 2), 2P, (2P + 2).
+(2P - 2) + 2P + (2P + 2) = 42
+6P = 42 => P = 7.
+The middle number is: 2P = 14.
+
+
+</explanation>
+</question>
+<question>
+<que>
+ The numerator of a certain fraction is 8 less than the denominator. If 3 is added to the numerator and 3 is subtracted from the denominator, the fraction becomes 3/4. Find the original fraction?
+</que>
+<option1>
+2/5
+</option1>
+<option2>
+7/9
+</option2>
+<option3>
+3/11
+</option3>
+<option4>
+8/5
+</option4>
+<answer>
+3/11
+</answer>
+<explanation>
+Explanation:
+The denominator be P, the numerator will be (P - 8).
+The fraction will be (P - 8)/P.
+Adding 3 to the numerator and subtracting 3 from the denominator, (P - 8 + 3)/(P - 3) = 3/4.
+(P - 5)/(P - 3) = 3/4
+P = 20 - 9 => P = 11.
+The fraction is: 3/11.
+
+</explanation>
+</question>
+<question>
+<que>
+ The sum of the present ages of two persons A and B is 60. If the age of A is twice that of B, find the sum of their ages 5 years hence?
+</que>
+<option1>
+50
+</option1>
+<option2>
+60
+</option2>
+<option3>
+70
+</option3>
+<option4>
+80
+</option4>
+<answer>
+70
+</answer>
+<explanation>
+Explanation:
+A + B = 60, A = 2B
+2B + B = 60 => B = 20 then A = 40.
+5 years, their ages will be 45 and 25.
+Sum of their ages = 45 + 25 = 70.
+
+</explanation>
+</question>
+</main>
