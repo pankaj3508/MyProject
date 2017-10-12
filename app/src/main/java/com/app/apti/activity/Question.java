@@ -1,12 +1,15 @@
 package com.app.apti.activity;
 
 import android.app.Fragment;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.app.apti.R;
@@ -26,16 +29,30 @@ import java.util.ArrayList;
 
 public class Question extends Fragment {
 
-    TextView title,t;
+    TextView title;
+    LinearLayout editor;
     private ArrayList<QuestionData> question_list=new ArrayList<QuestionData>();
     @Override
     public View onCreateView(LayoutInflater inflater,  ViewGroup container, Bundle savedInstanceState) {
 
         View v=inflater.inflate(R.layout.question,container,false);
         title=(TextView)v.findViewById(R.id.ques_topic);
+        editor=(LinearLayout)v.findViewById(R.id.editor);
         Bundle b=getArguments();
         title.setText(b.getString("topic"));
         Log.d("pankaj",question_list.toString());
+
+        editor.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Fragment f=new Editor();
+                FragmentManager fragmentManager=getFragmentManager();
+                FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.frame,f);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+            }
+        });
 
         return v;
     }
