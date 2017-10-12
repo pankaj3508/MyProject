@@ -85,4 +85,20 @@
         <item>@drawable/words</item>
     </integer-array>
 
+
+    <integer-array name="puzzle_img">
+        <item>@drawable/combination</item>
+        <item>@drawable/effect</item>
+        <item>@drawable/bank</item>
+        <item>@drawable/star</item>
+        <item>@drawable/code</item>
+        <item>@drawable/sentence</item>
+        <item>@drawable/interest</item>
+        <item>@drawable/number2</item>
+        <item>@drawable/probability</item>
+        <item>@drawable/bookmark</item>
+        <item>@drawable/partnership</item>
+        <item>@drawable/antonym</item>
+    </integer-array>
+
 </resources>

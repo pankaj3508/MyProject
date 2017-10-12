@@ -107,4 +107,19 @@
 
     <string name="title_activity_feedback">Feedback</string>
 
+    <string-array name="puzzles">
+        <item>Logical Puzzles</item>
+        <item>Spatial Puzzles</item>
+        <item>Important Puzzles</item>
+        <item>Famous Puzzles</item>
+        <item>Programming Puzzles</item>
+        <item>Language Puzzles</item>
+        <item>Math Puzzles</item>
+        <item>Number Puzzles</item>
+        <item>Probability Puzzles</item>
+        <item>Reasoning Puzzles</item>
+        <item>interview puzzle</item>
+        <item>Acronym Puzzles</item>
+    </string-array>
+
 </resources>

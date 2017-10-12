@@ -43,6 +43,12 @@ public class Topic extends Fragment implements AdapterView.OnItemClickListener {
             topicnames=getResources().getStringArray(R.array.verbal);
             imagenames=getResources().obtainTypedArray(R.array.verbal_img);
         }
+        else if(category.equals("Puzzle"))
+        {
+            topicnames=getResources().getStringArray(R.array.puzzles);
+            imagenames=getResources().obtainTypedArray(R.array.puzzle_img);
+        }
+
 
         for(int i=0;i<topicnames.length;i++)
         {

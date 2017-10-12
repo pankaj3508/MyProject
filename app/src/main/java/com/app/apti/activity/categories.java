@@ -36,6 +36,15 @@ public class categories extends AppCompatActivity {
             case "Logical Reasoning":logical();
                 break;
             case "Verbal": verbal();
+                break;
+            case "Puzzle":puzzles();
+                break;
+            case "Interview":interview();
+                break;
+            case "Books": video();
+                break;
+            case "Video": video();
+                break;
             default:
 
         }
@@ -70,6 +79,31 @@ public class categories extends AppCompatActivity {
         fragmentTransaction.commit();
     }
 
+    private void puzzles()
+    {
+        Fragment f=new Topic();
+        FragmentManager fragmentManager=getFragmentManager();
+        FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.frame,f);
+        fragmentTransaction.commit();
+    }
+
+    private void interview()
+    {
+        Fragment f=new interviews();
+        FragmentManager fragmentManager=getFragmentManager();
+        FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.frame,f);
+        fragmentTransaction.commit();
+    }
+    private void video()
+    {
+        Fragment f=new Video();
+        FragmentManager fragmentManager=getFragmentManager();
+        FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.frame,f);
+        fragmentTransaction.commit();
+    }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         onBackPressed();
