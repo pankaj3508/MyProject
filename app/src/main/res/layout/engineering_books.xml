@@ -13,8 +13,8 @@
             android:background="@color/colorPrimary">
             <ImageView
                 android:layout_width="50dp"
-                android:id="@+id/title_image"
                 android:layout_height="50dp"
+                android:background="@drawable/computer"
                 android:alpha="0.7"/>
         </LinearLayout>
 
@@ -25,20 +25,19 @@
             android:layout_gravity="bottom|center">
             <TextView
                 android:layout_width="wrap_content"
-                android:id="@+id/title_topic"
                 android:layout_height="match_parent"
                 android:paddingLeft="20dp"
                 android:textColor="@color/colorPrimary"
                 android:textStyle="bold"
                 android:textSize="20dp"
                 android:paddingRight="20dp"
-                android:text=" Logical Reasoning "/>
+                android:text="Engineering"/>
         </LinearLayout>
 
     </FrameLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="260dp"
+        android:layout_height="360dp"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
         android:layout_marginTop="30dp"
@@ -50,7 +49,7 @@
             android:background="#A8C7C9"
             android:orientation="horizontal">
             <LinearLayout
-                android:id="@+id/formula_logical"
+                android:id="@+id/csit"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -60,11 +59,11 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:alpha="0.7"
-                    android:background="@drawable/aptitude"/>
+                    android:background="@drawable/meeting"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Aptitude"
+                    android:text="CS/IT"
                     android:textStyle="bold"
                     android:textSize="15dp"
                     android:layout_marginTop="5dp"
@@ -76,61 +75,7 @@
                 android:background="#92b8ba"
                 />
             <LinearLayout
-                android:id="@+id/problems_logical"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:layout_weight="1"
-                android:orientation="vertical">
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:alpha="0.7"
-                    android:background="@drawable/logic"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Logical"
-                    android:textStyle="bold"
-                    android:textSize="15dp"
-                    android:layout_marginTop="5dp"
-                    android:textColor="#434343"/>
-            </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:background="#C7D6DB">
-            <LinearLayout
-                android:id="@+id/verbal_books"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:layout_weight="1"
-                android:orientation="vertical">
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:alpha="0.7"
-                    android:background="@drawable/verbal"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Verbal"
-                    android:textStyle="bold"
-                    android:textSize="15dp"
-                    android:layout_marginTop="5dp"
-                    android:textColor="#434343"/>
-            </LinearLayout>
-            <View
-                android:layout_width="2dp"
-                android:layout_height="match_parent"
-                android:background="#b9cbd1"
-                />
-            <LinearLayout
-                android:id="@+id/engg"
+                android:id="@+id/civil"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:gravity="center"
@@ -144,7 +89,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Engineering"
+                    android:text=" Civil"
                     android:textStyle="bold"
                     android:textSize="15dp"
                     android:layout_marginTop="5dp"
@@ -152,7 +97,175 @@
             </LinearLayout>
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#C7D6DB">
+            <LinearLayout
+                android:id="@+id/electrical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:alpha="0.7"
+                    android:background="@drawable/mba"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Electrical"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#434343"/>
+            </LinearLayout>
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#b9cbd1"
+                />
+            <LinearLayout
+                android:id="@+id/electronics"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:alpha="0.7"
+                    android:background="@drawable/company"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Electronics"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#434343"/>
+            </LinearLayout>
+        </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#A8C7C9"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/mechanical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:alpha="0.7"
+                    android:background="@drawable/govt"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mechanical"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#434343"/>
+            </LinearLayout>
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#92b8ba"
+                />
+            <LinearLayout
+                android:id="@+id/chemical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:alpha="0.7"
+                    android:background="@drawable/extra"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chemical"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#434343"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#C7D6DB"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/biotech"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:alpha="0.7"
+                    android:background="@drawable/govt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Bio Technology"
+                    android:textColor="#434343"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#92b8ba" />
+
+            <LinearLayout
+                android:id="@+id/instrument"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:alpha="0.7"
+                    android:background="@drawable/extra" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Instrumentation"
+                    android:textColor="#434343"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
     </LinearLayout>
 
 </LinearLayout>

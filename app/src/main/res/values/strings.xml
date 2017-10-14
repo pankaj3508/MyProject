@@ -122,4 +122,55 @@
         <item>Acronym Puzzles</item>
     </string-array>
 
+
+    <string-array name="mechanical">
+        <item>Strength of Materials</item>
+        <item>Design of machine elements</item>
+        <item>Theory of Machines</item>
+        <item>Fluid Mechanics</item>
+        <item>Vibrations</item>
+        <item>Thermal Science</item>
+        <item>Engineering Mathematics</item>
+        <item>Industrial engineering</item>
+        <item>Manufacturing science</item>
+        <item>Engineering Mechanics</item>
+    </string-array>
+
+    <string-array name="mechanical_books">
+        <item>Mechanics of material by Beer and Johnson</item>
+        <item> Strength of materials by Sadhu Singh</item>
+        <item> A test book of machine design by R.S Khurmi and J.K Gupta</item>
+        <item>Design of machine elements by V.B Bhandari</item>
+        <item> Theory of machines by S. Ratan</item>
+        <item>Theory of mechanism and machines by Amitabh Ghosh and Asok Kumar</item>
+        <item>Fluid mechanics by K. L Kumar</item>
+        <item>Fluid mechanics by R.K. Bansal</item>
+        <item>Vibration by SS Rao</item>
+        <item>Vibration by MP Grover</item>
+        <item>Engineering thermodynamics by P.K Nag</item>
+        <item>Thermodynamics by R.K rajput</item>
+        <item>Higher Engineering Mathematics, Author’s Name: B. S. Grewal</item>
+        <item>Advanced Engineering Mathematics by Erwin Kreyszig</item>
+        <item>Industrial engineering and management by O.P Khanna</item>
+        <item> Operation research: Quantitative techniques for management by V.K Kapoor</item>
+        <item>Manufacturing technology by P.N. Rao</item>
+        <item> Manufacturing science by Ghosh and Mallik</item>
+        <item>Mechanics for engineers (statics and dynamics) by Beer and Johnson</item>
+        <item>Engineering Mechanics: Statics And Dynamics by N. H. Dubey</item>
+    </string-array>
+
+
+    <string-array name="csit">
+        <item>Computer Organization and Architecture</item>
+        <item>Algorithms</item>
+        <item>Data structures</item>
+        <item>Operating System</item>
+        <item>Compiler Design</item>
+        <item>DBMS</item>
+        <item>Digital Logic</item>
+        <item>C Language</item>
+        <item>Theory of Computation</item>
+        <item>Computer Network</item>
+    </string-array>
+
 </resources>

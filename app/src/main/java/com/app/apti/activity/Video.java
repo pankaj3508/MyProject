@@ -23,7 +23,7 @@ public class Video extends Fragment {
 
   ImageView iv;
     TextView tv;
-    LinearLayout logical,quant;
+    LinearLayout logical,quant,vrbl,engg;
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         View v=inflater.inflate(R.layout.video,container,false);
@@ -40,6 +40,8 @@ public class Video extends Fragment {
         }
         quant=(LinearLayout)v.findViewById(R.id.formula_logical);
         logical=(LinearLayout)v.findViewById(R.id.problems_logical);
+        vrbl=(LinearLayout)v.findViewById(R.id.verbal_books);
+        engg=(LinearLayout)v.findViewById(R.id.engg);
         quant.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -60,6 +62,34 @@ public class Video extends Fragment {
                 Bundle b=new Bundle();
                 b.putString("book","logical");
                 Fragment f=new Books();
+                f.setArguments(b);
+                FragmentManager fragmentManager=getFragmentManager();
+                FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.frame,f);
+                fragmentTransaction.addToBackStack(null).commit();
+            }
+        });
+
+        vrbl.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Bundle b=new Bundle();
+                b.putString("book","verbal");
+                Fragment f=new Books();
+                f.setArguments(b);
+                FragmentManager fragmentManager=getFragmentManager();
+                FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.frame,f);
+                fragmentTransaction.addToBackStack(null).commit();
+            }
+        });
+
+        engg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Bundle b=new Bundle();
+                b.putString("book","engineering");
+                Fragment f=new Engineering_book();
                 f.setArguments(b);
                 FragmentManager fragmentManager=getFragmentManager();
                 FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();

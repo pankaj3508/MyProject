@@ -1,153 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:background="#f8f8f8"
-    android:layout_height="match_parent">
-<FrameLayout
-    android:layout_width="match_parent"
-    android:layout_height="120dp">
+    android:orientation="vertical"
+    android:layout_width="200dp"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:gravity="center">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="40dp"
         android:gravity="center"
         android:background="@color/colorPrimary">
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:background="@drawable/aptitiude2"
-            android:alpha="0.7"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:background="#fff"
-        android:layout_gravity="bottom|center">
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:paddingLeft="20dp"
-            android:textColor="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:text=""
             android:textStyle="bold"
-            android:textSize="20dp"
-            android:paddingRight="20dp"
-            android:text=" Aptitude Preparation"/>
+            android:id="@+id/sub"/>
     </LinearLayout>
-
-</FrameLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="260dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp"
-        android:layout_marginTop="30dp"
+        android:layout_height="match_parent"
         android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/book1"/>
+    </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:background="#A8C7C9"
-            android:orientation="horizontal">
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical">
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:alpha="0.7"
-                    android:background="@drawable/formula"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Formulae"
-                    android:textStyle="bold"
-                    android:textSize="15dp"
-                    android:layout_marginTop="5dp"
-                    android:textColor="#434343"/>
-            </LinearLayout>
-            <View
-                android:layout_width="2dp"
-                android:layout_height="match_parent"
-                android:background="#92b8ba"
-               />
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:layout_weight="1"
-                android:orientation="vertical">
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:alpha="0.7"
-                    android:background="@drawable/problems"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Problem"
-                    android:textStyle="bold"
-                    android:textSize="15dp"
-                    android:layout_marginTop="5dp"
-                    android:textColor="#434343"/>
-            </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_height="match_parent">
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:background="#C7D6DB">
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:layout_weight="1"
-                android:orientation="vertical">
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:alpha="0.7"
-                    android:background="@drawable/tricks"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Tips and Tricks"
-                    android:textStyle="bold"
-                    android:textSize="15dp"
-                    android:layout_marginTop="5dp"
-                    android:textColor="#434343"/>
+            android:layout_height="wrap_content"
+            android:id="@+id/book2"/>
             </LinearLayout>
-            <View
-                android:layout_width="2dp"
-                android:layout_height="match_parent"
-                android:background="#b9cbd1"
-               />
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:layout_weight="1"
-                android:orientation="vertical">
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:alpha="0.7"
-                    android:background="@drawable/test"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Test"
-                    android:textStyle="bold"
-                    android:textSize="15dp"
-                    android:layout_marginTop="5dp"
-                    android:textColor="#434343"/>
-            </LinearLayout>
-        </LinearLayout>
-
-
     </LinearLayout>
 
 </LinearLayout>

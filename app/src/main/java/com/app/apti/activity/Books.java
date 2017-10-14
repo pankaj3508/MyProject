@@ -26,7 +26,8 @@ public class Books extends Fragment {
             v=inflater.inflate(R.layout.books,container,false);
         else if(s.equals("logical"))
             v=inflater.inflate(R.layout.books2,container,false);
-
+        else if(s.equals("verbal"))
+            v=inflater.inflate(R.layout.books3,container,false);
         return v;
     }
 }
