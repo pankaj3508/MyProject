@@ -51,12 +51,12 @@ public class CustomBranchSubject extends BaseAdapter {
         if(v==null)
             v=inflater.inflate(R.layout.subjects_list,null);
         LinearLayout color=(LinearLayout)v.findViewById(R.id.colorchange);
-        if((i&1)==1)
+       /* if((i&1)==1)
         {
             color.setBackgroundColor(Color.parseColor("#A7C6C6"));
         }
         else
-            color.setBackgroundColor(Color.parseColor("#C9D7DA"));
+            color.setBackgroundColor(Color.parseColor("#C9D7DA"));*/
         TextView tv=(TextView)v.findViewById(R.id.topiclist_text);
         tv.setText(title[i]);
         return v;

@@ -4,6 +4,7 @@ import android.app.Dialog;
 import android.app.Fragment;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.LevelListDrawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
@@ -68,7 +69,13 @@ public class EngineeringBranch extends Fragment implements AdapterView.OnItemCli
         book1.setText(books[i*2]);
         book2.setText(books[i*2+1]);
         head.setText(heading);
-
+        LinearLayout close=(LinearLayout)dialog.findViewById(R.id.close);
+        close.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialog.dismiss();
+            }
+        });
 
         dialog.show();
     }
