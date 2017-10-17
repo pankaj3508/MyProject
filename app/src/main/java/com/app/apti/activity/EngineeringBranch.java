@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.AdapterView;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -41,9 +42,38 @@ public class EngineeringBranch extends Fragment implements AdapterView.OnItemCli
         {
             subjects=getResources().getStringArray(R.array.mechanical);
         }
-        listsubject=(ListView)v.findViewById(R.id.branchtopic_list);
-        listsubject.setAdapter(new CustomBranchSubject(getActivity(),subjects));
-        listsubject.setOnItemClickListener(this);
+        else if(branch.equalsIgnoreCase("cs/it"))
+        {
+            subjects=getResources().getStringArray(R.array.csit);
+        }
+        else if(branch.equalsIgnoreCase("electronics"))
+        {
+            subjects=getResources().getStringArray(R.array.electronics);
+        }else if(branch.equalsIgnoreCase("electrical"))
+        {
+            subjects=getResources().getStringArray(R.array.electrical);
+        }else if(branch.equalsIgnoreCase("civil"))
+        {
+            subjects=getResources().getStringArray(R.array.civil);
+        }
+        else if(branch.equalsIgnoreCase("chemical"))
+        {
+            subjects=getResources().getStringArray(R.array.chemical);
+        }
+        else if(branch.equalsIgnoreCase("INSTRUMENTATION"))
+        {
+            subjects=getResources().getStringArray(R.array.instrumentation);
+        }
+        else if(branch.equalsIgnoreCase("BIO TECHNOLOGY"))
+        {
+            ImageView iv=(ImageView)v.findViewById(R.id.notfound);
+            iv.setVisibility(View.VISIBLE);
+        }
+        if(!branch.equalsIgnoreCase("BIO TECHNOLOGY")) {
+            listsubject = (ListView) v.findViewById(R.id.branchtopic_list);
+            listsubject.setAdapter(new CustomBranchSubject(getActivity(), subjects));
+            listsubject.setOnItemClickListener(this);
+        }
         return v;
     }
 
@@ -52,6 +82,30 @@ public class EngineeringBranch extends Fragment implements AdapterView.OnItemCli
         if(branch.equalsIgnoreCase("mechanical"))
         {
             books=getResources().getStringArray(R.array.mechanical_books);
+            opendialog(subjects[i],i);
+        }else if(branch.equalsIgnoreCase("cs/it"))
+        {
+            books=getResources().getStringArray(R.array.csit_books);
+            opendialog(subjects[i],i);
+        }else if(branch.equalsIgnoreCase("electronics"))
+        {
+            books=getResources().getStringArray(R.array.electronics_books);
+            opendialog(subjects[i],i);
+        }else if(branch.equalsIgnoreCase("electrical"))
+        {
+            books=getResources().getStringArray(R.array.electrical_books);
+            opendialog(subjects[i],i);
+        }else if(branch.equalsIgnoreCase("civil"))
+        {
+            books=getResources().getStringArray(R.array.civil_books);
+            opendialog(subjects[i],i);
+        }else if(branch.equalsIgnoreCase("chemical"))
+        {
+            books=getResources().getStringArray(R.array.chemical_books);
+            opendialog(subjects[i],i);
+        }else if(branch.equalsIgnoreCase("INSTRUMENTATION"))
+        {
+            books=getResources().getStringArray(R.array.instrumentation_books);
             opendialog(subjects[i],i);
         }
     }
@@ -66,7 +120,14 @@ public class EngineeringBranch extends Fragment implements AdapterView.OnItemCli
         TextView head=(TextView)dialog.findViewById(R.id.sub);
         TextView book1=(TextView)dialog.findViewById(R.id.book1);
         TextView book2=(TextView)dialog.findViewById(R.id.book2);
+        String b=books[i*2+1];
         book1.setText(books[i*2]);
+        if(b.equals(""))
+        {
+            LinearLayout l=(LinearLayout)dialog.findViewById(R.id.visible);
+            l.setVisibility(View.INVISIBLE);
+        }
+        else
         book2.setText(books[i*2+1]);
         head.setText(heading);
         LinearLayout close=(LinearLayout)dialog.findViewById(R.id.close);

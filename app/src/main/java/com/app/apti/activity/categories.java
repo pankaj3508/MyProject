@@ -45,6 +45,8 @@ public class categories extends AppCompatActivity {
                 break;
             case "Video": video();
                 break;
+            case "Extra": extra();
+                break;
             default:
 
         }
@@ -99,6 +101,14 @@ public class categories extends AppCompatActivity {
     private void video()
     {
         Fragment f=new Video();
+        FragmentManager fragmentManager=getFragmentManager();
+        FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.frame,f);
+        fragmentTransaction.commit();
+    }
+    private void extra()
+    {
+        Fragment f=new Extra();
         FragmentManager fragmentManager=getFragmentManager();
         FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.frame,f);

@@ -1,7 +1,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent">
-
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,7 +18,12 @@
             android:textSize="18dp"
             android:textStyle="bold" />
     </LinearLayout>
-
+    <ImageView
+        android:id="@+id/notfound"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/notfound"/>
     <ListView
 
         android:divider="@null"

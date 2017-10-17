@@ -173,4 +173,221 @@
         <item>Computer Network</item>
     </string-array>
 
+    <string-array name="csit_books">
+        <item>Computer Organization and Architecture: Hamacher, Vranesic, Zaky</item>
+        <item>Computer Organisation – Tanenbaum</item>
+        <item>Introducing to algorithms by Cormen</item>
+        <item>The design and analysis of computer algorithm by Aho, Ullman</item>
+        <item>Data structures using C and C++ by Langsam, Augenstein, tenenbau</item>
+        <item>Classic data structure by Debasis Samanta</item>
+        <item>Operating System concepts by Silberschatz A, Galvin, P.B, Gagne, G</item>
+        <item>Operating system by William Stallings</item>
+        <item>Compilers, principles, techniques and tools by Alfred V. Aho, Ravi Sethi, Jeffery D. Ullman</item>
+        <item>Compiler Construction Principles and Practice ,by Kenneth C. Louden</item>
+        <item> Database concepts by Korth and Sudarshan</item>
+        <item>Database management systems by Raghurama Krishnan</item>
+        <item>Digital Logic and Computer Design: M. Morris Mano</item>
+        <item>DIGITAL DESIGN by JOHN F. WAKERLY.</item>
+        <item>data structure using C and C++ by Langsam, Augestein, Tenenbau</item>
+        <item> Let us C by Yashwanth Kenetkar</item>
+        <item> Introduction to automata theory, Languages and computation by John E. Hopcroft, Jeffery D. Ullman</item>
+        <item>An introduction to formal languages and automata by Peter Linz</item>
+        <item>Computer Networking: A Top - Down Approach by James F. Kurose</item>
+        <item>Data and Computer Communications (William Stallings Books on Computer and Data Communications)</item>
+
+    </string-array>
+
+
+    <string-array name="electronics">
+        <item>Engineering Mathematics</item>
+        <item>Network</item>
+        <item>Signals and Systems</item>
+        <item>Analog Circuits</item>
+        <item>Electronic devices</item>
+        <item>Measurement systems</item>
+        <item>Communication</item>
+        <item>Digital Circuits</item>
+        <item>Control Systems</item>
+        <item>Electromagnetic Theory</item>
+    </string-array>
+
+    <string-array name="electronics_books">
+        <item>Higher Engineering Mathematics, Author’s Name: B. S. Grewal</item>
+        <item>Advanced Engineering Mathematics by Erwin Kreyszig</item>
+        <item> Fundamental of electric circuits by Charles K. Alexander, Mathew N.O. Sadiku</item>
+        <item> Engineering circuit analysis by William H.Hayt and Jack E. Kemmerly</item>
+        <item> Signals and system by Alan V. Oppenheim</item>
+        <item> signals and systems by Tarun Kumar Rawat</item>
+        <item> Microelectronic circuits by Adel S. Sedra, Kenneth Carless Smith</item>
+        <item>Integrated electronics by Millman and Halkias</item>
+        <item>Semiconductor physics and devices by Naresh</item>
+        <item> Integrated electronics solid state devices by Ben G. Streetman Sanjay Banerjee</item>
+        <item>Measurement systems: application design by Doebeli</item>
+        <item>Principles of measurement systems book by John Bentley</item>
+        <item>Communication system by Simon S. Haykin</item>
+        <item> Principles of communication system by Taub</item>
+        <item>Digital systems: Principles and applications by Tocci</item>
+        <item>Digital logic and computer design by M.Morris Mano</item>
+        <item>control systems engineering by I.J Nagrath</item>
+        <item>AUTOMATIC CONTROL SYSTEMS by B.C. Kuo</item>
+        <item>Engineering electromagnetic by William H. Hayt Jr., John A. Buck</item>
+        <item>Electromagnetic waves by R.K. Shevgaonkar</item>
+    </string-array>
+
+    <string-array name="electrical">
+        <item>Engineering Mathematics</item>
+        <item>Electric Circuits</item>
+        <item>Signals and Systems</item>
+        <item>Analog Circuits</item>
+        <item>Electrical Machines</item>
+        <item>Measurements</item>
+        <item>Digital Circuits</item>
+        <item>Control Systems</item>
+        <item>Electromagnetic Theory</item>
+        <item>Power Electronics</item>
+        <item>Power Systems</item>
+    </string-array>
+
+    <string-array name="electrical_books">
+        <item>Higher Engineering Mathematics, Author’s Name: B. S. Grewal</item>
+        <item>Advanced Engineering Mathematics by Erwin Kreyszig</item>
+        <item>Fundamental of electric circuits by Charles K. Alexander, Mathew N.O. Sadiku</item>
+        <item>Engineering circuit analysis by William H.Hayt and Jack E. Kemmerly</item>
+        <item>Signals and system by Alan V. Oppenheim</item>
+        <item>signals and systems by Tarun Kumar Rawat</item>
+        <item>Microelectronic circuits by Adel S. Sedra, Kenneth Carless Smith</item>
+        <item>Integrated electronics by Millman and Halkias</item>
+        <item>Electrical Machinery:PS Bhimra</item>
+        <item>Electrical Machines: Kothari and Nagrath</item>
+        <item>A course in electrical and electronic measurements and instrumentation by A. K. Sawhney, Puneet Sawhney</item>
+        <item>Electronic instrumentation and measurement technique by William David Cooper</item>
+        <item>Digital systems: Principles and applications by Tocci</item>
+        <item>Digital logic and computer design by M.Morris Mano</item>
+        <item>control systems engineering by I.J Nagrath</item>
+        <item>AUTOMATIC CONTROL SYSTEMS by B.C. Kuo</item>
+        <item>Engineering electromagnetic by William H. Hayt Jr., John A. Buck</item>
+        <item>Electromagnetic waves by R.K. Shevgaonkar</item>
+        <item> Power electronics by P.S. Bimbhra</item>
+        <item>Power electronics circuits, devices and applications by Rashid</item>
+        <item>Electrical power systems by C.L. Wadhwa</item>
+        <item>Principles of power systems by V.K. Mehra, Rohit Mehta</item>
+    </string-array>
+
+    <string-array name="civil">
+        <item>Engineering Mathematics</item>
+        <item>Engineering Mechanics</item>
+        <item>Soil Mechanics and Foundation Engineering</item>
+        <item>Concrete Structures</item>
+        <item>Fluid Mechanics and Hydraulics</item>
+        <item>Structural Analysis</item>
+        <item>Transportation Engineering</item>
+        <item>Solid Mechanics</item>
+        <item>Construction Materials and Management</item>
+        <item>Environmental Engineering</item>
+        <item>Steel Structures</item>
+    </string-array>
+
+
+    <string-array name="civil_books">
+        <item>Higher Engineering Mathematics, Author’s Name: B. S. Grewal</item>
+        <item>Advanced Engineering Mathematics by Erwin Kreyszig</item>
+        <item> Mechanics for engineers (statics and dynamics) by Beer and Johnson</item>
+        <item></item>
+        <item>Soil Mechanics and Foundation Engineering : Gopal Ranjan and Rao,Venkat Ramaiha, S. K. Garg, B.C. Punamia</item>
+        <item></item>
+        <item>Dr. B.C. Punmia, Ashok Kr. Jain, Arun Kr. Jain</item>
+        <item></item>
+        <item>Fluid Mechanics and Fluid Machines : Modi and Seth, R. K. Bansal, A.K.Jain K.Subramanyam, Jagdish Lal</item>
+        <item></item>
+        <item>Theory of Structures/ Analysis of Structure : S. Ramamurtham, L.S. Negi and Jangit, Gupta and Pandit, C.S. Reddy</item>
+        <item></item>
+        <item>Highway Engineering : Khanna and Justo, Kadiyali</item>
+        <item>Railway Engineering : Saxena and Arora</item>
+        <item>Strength of Materials /Mechanics of Structure : Gare and Timoshenko, E.Popove, L. Singer, B.C. Punamia</item>
+        <item> Mechanics of material by Beer and Johnson</item>
+        <item>Construction Planning andManagement : B.C. Punamia</item>
+        <item></item>
+        <item>Environmental Engineering : B.C. Punamia(Part I and II), S.K. Garg (Part-I and II), Peavy, Metcalf and Eddy</item>
+        <item></item>
+        <item>Steel Design : N. Subramanian, S.K. Duggal, L.S. Negi</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="chemical">
+        <item>Mathematics</item>
+        <item> Process Calculation</item>
+        <item>Chemical Engineering Thermodynamics - I</item>
+        <item> Chemical Engineering Thermodynamics - II </item>
+        <item>Fluid Mechanics and Heat Transfer</item>
+        <item>Mass Transfer </item>
+        <item>Chemical Reaction Engineering</item>
+        <item>Instrumentation and process control</item>
+        <item>Chemical Technology</item>
+        <item>Plant Economics and <Design></Design></item>
+    </string-array>
+
+    <string-array name="chemical_books">
+        <item>Higher Engineering Mathematics, Author’s Name: B. S. Grewal</item>
+        <item>Advanced Engineering Mathematics by Erwin Kreyszig</item>
+        <item>Chemical Process Principles Part-I by Hougen and Watson</item>
+        <item></item>
+        <item>Engineering thermodynamics by cengel and boles</item>
+        <item></item>
+        <item>Introduction to chemical engineering thermodynamics by smith</item>
+        <item></item>
+        <item>unit operations of chemical engineering by mccabe and smith</item>
+        <item></item>
+        <item>mass transfer operations by Treybal</item>
+        <item></item>
+        <item>Chemical Reaction Engineering by levenspiel</item>
+        <item></item>
+        <item>Process System analysis and Control by coughanowr</item>
+        <item></item>
+        <item> Outlines of Chemical Technology by Dryden</item>
+        <item></item>
+        <item>Plant Design and Economics for Chemical Engineers by Timmerhaus</item>
+        <item></item>
+    </string-array>
+
+
+    <string-array name="instrumentation">
+        <item>Engineering Mathematics</item>
+        <item>Network</item>
+        <item>Signals and Systems</item>
+        <item>Process Control</item>
+        <item>Analog Circuits</item>
+        <item>Electronic devices</item>
+        <item>Transducers</item>
+        <item>Measurements</item>
+        <item>Communication</item>
+        <item>Optical</item>
+        <item>Digital Circuits</item>
+        <item>Control Systems</item>
+    </string-array>
+    <string-array name="instrumentation_books">
+        <item>Higher Engineering Mathematics, Author’s Name: B. S. Grewal</item>
+        <item>Advanced Engineering Mathematics by Erwin Kreyszig</item>
+        <item>Fundamental of electric circuits by Charles K. Alexander, Mathew N.O. Sadiku</item>
+        <item> Engineering circuit analysis by William H.Hayt and Jack E. Kemmerly</item>
+        <item>Signals and system by Alan V. Oppenheim</item>
+        <item>signals and systems by Tarun Kumar Rawat</item>
+        <item>Process control instrumentation technology by Curtis D. Johnson</item>
+        <item></item>
+        <item>Microelectronic circuits by Adel S. Sedra, Kenneth Carless Smith</item>
+        <item>Integrated electronics by Millman and Halkias</item>
+        <item>Semiconductor physics and devices by Naresh</item>
+        <item>Integrated electronics solid state devices by Ben G. Streetman Sanjay Banerjee</item>
+        <item>Measurement systems: application design by Doebeli</item>
+        <item>Principles of measurement systems book by John Bentley</item>
+        <item> A course in electrical and electronic measurements and instrumentation by A. K. Sawhney, Puneet Sawhney</item>
+        <item> Electronic instrumentation and measurement technique by William David Cooper</item>
+        <item> Communication system by Simon S. Haykin</item>
+        <item>Principles of communication system by Taub</item>
+        <item>Fiber optics and optoelectronics by R.P. Khare</item>
+        <item>Optical fiber communications by Gerd Keiser</item>
+        <item>Digital systems: Principles and applications by Tocci</item>
+        <item> Digital logic and computer design by M.Morris Mano</item>
+        <item>control systems engineering by I.J Nagrath</item>
+        <item>AUTOMATIC CONTROL SYSTEMS by B.C. Kuo</item>
+    </string-array>
 </resources>

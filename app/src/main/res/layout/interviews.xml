@@ -69,11 +69,11 @@
                     android:layout_marginTop="5dp"
                     android:textColor="#434343"/>
             </LinearLayout>
+
             <View
                 android:layout_width="2dp"
                 android:layout_height="match_parent"
-                android:background="#92b8ba"
-                />
+                android:background="#92b8ba" />
             <LinearLayout
                 android:id="@+id/software"
                 android:layout_width="0dp"
