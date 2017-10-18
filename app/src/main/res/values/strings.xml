@@ -390,4 +390,72 @@
         <item>control systems engineering by I.J Nagrath</item>
         <item>AUTOMATIC CONTROL SYSTEMS by B.C. Kuo</item>
     </string-array>
+
+
+    <string-array name="software_interview">
+        <item>C/C++</item>
+        <item>Data Structure</item>
+        <item>Algorithm</item>
+        <item>Networking</item>
+        <item>Android</item>
+        <item>Python</item>
+        <item>Linux</item>
+        <item>Perl</item>
+        <item>Ruby</item>
+        <item>Rails</item>
+        <item>Core Java</item>
+        <item>Servlet</item>
+        <item>Spring</item>
+        <item>C#</item>
+        <item>ASP.NET</item>
+        <item>Php</item>
+        <item>SQL</item>
+        <item>PL/SQL</item>
+        <item>MongoDB</item>
+        <item>HTML</item>
+        <item>CSS</item>
+        <item>JavaScript</item>
+        <item>jQuery</item>
+        <item>AngularJS</item>
+        <item>Node.js</item>
+    </string-array>
+
+
+    <string-array name="comapny_list">
+        <item>Amazon</item>
+        <item>Samsung</item>
+        <item>Microsoft</item>
+        <item>Adobe</item>
+        <item>Oracle</item>
+        <item>Google</item>
+        <item>Flipkart</item>
+        <item>Goldman Sachs</item>
+        <item>Cisco</item>
+        <item>Visa</item>
+        <item>Paytm</item>
+        <item>Morgan Stanley</item>
+        <item>SAP Labs</item>
+        <item>Ola Cabs</item>
+        <item>VMware</item>
+        <item>TCS</item>
+        <item>Wipro</item>
+        <item>Infosys</item>
+        <item>IBM</item>
+        <item>Cognizant</item>
+        <item>Directi</item>
+        <item>Ericson</item>
+        <item>NTT Data</item>
+        <item>MakeMYTrip</item>
+        <item>Zomato</item>
+        <item>Xpedia</item>
+        <item>Snapdeal</item>
+        <item>Qualcomm</item>
+        <item>Linkedin</item>
+        <item>Tata Motors</item>
+        <item>Huawei</item>
+        <item>Deloitte</item>
+        <item>HCL</item>
+        <item>Genpact</item>
+        <item>IOCL</item>
+    </string-array>
 </resources>
