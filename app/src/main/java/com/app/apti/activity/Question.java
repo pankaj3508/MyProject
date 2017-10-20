@@ -3,6 +3,9 @@ package com.app.apti.activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.ActivityNotFoundException;
+import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.util.Log;
@@ -11,6 +14,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.app.apti.R;
 
@@ -29,18 +33,46 @@ import java.util.ArrayList;
 
 public class Question extends Fragment {
 
+    int pos=0;
     TextView title;
     LinearLayout editor;
-    private ArrayList<QuestionData> question_list=new ArrayList<QuestionData>();
+    String topic;
+    MyDatabase_question myDatabase_question;
+    TextView quest,opt1,opt2,opt3,opt4;
+    LinearLayout prev,next,share;
+    LinearLayout one,two,three,four;
+    LinearLayout color_one,color_two,color_three,color_four;
+    private ArrayList<StoreQuestionData> questions;
+   // private ArrayList<QuestionData> question_list=new ArrayList<QuestionData>();
     @Override
     public View onCreateView(LayoutInflater inflater,  ViewGroup container, Bundle savedInstanceState) {
 
         View v=inflater.inflate(R.layout.question,container,false);
         title=(TextView)v.findViewById(R.id.ques_topic);
         editor=(LinearLayout)v.findViewById(R.id.editor);
-        Bundle b=getArguments();
-        title.setText(b.getString("topic"));
-        Log.d("pankaj",question_list.toString());
+        prev=(LinearLayout)v.findViewById(R.id.move_prev);
+        next=(LinearLayout) v.findViewById(R.id.move_next);
+        share=(LinearLayout) v.findViewById(R.id.share);
+        one=(LinearLayout)v.findViewById(R.id.layout_opt1);
+        two=(LinearLayout)v.findViewById(R.id.layout_opt2);
+        three=(LinearLayout)v.findViewById(R.id.layout_opt3);
+        four=(LinearLayout)v.findViewById(R.id.layout_opt4);
+        color_one=(LinearLayout)v.findViewById(R.id.color_option1);
+        color_two=(LinearLayout)v.findViewById(R.id.color_option2);
+        color_three=(LinearLayout)v.findViewById(R.id.color_option3);
+        color_four=(LinearLayout)v.findViewById(R.id.color_option4);
+        quest=(TextView)v.findViewById(R.id.ques);
+        opt1=(TextView)v.findViewById(R.id.option1);
+        opt2=(TextView)v.findViewById(R.id.option2);
+        opt3=(TextView)v.findViewById(R.id.option3);
+        opt4=(TextView)v.findViewById(R.id.option4);
+        quest.setText(questions.get(pos).ques);
+        opt1.setText(questions.get(pos).option1);
+        opt2.setText(questions.get(pos).option2);
+        opt3.setText(questions.get(pos).option3);
+        opt4.setText(questions.get(pos).option4);
+        title.setText(topic);
+      //  Log.d("pankaj",question_list.toString());
 
         editor.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,13 +86,123 @@ public class Question extends Fragment {
             }
         });
 
+        prev.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(pos!=0)
+                    pos--;
+                quest.setText(questions.get(pos).ques);
+                opt1.setText(questions.get(pos).option1);
+                opt2.setText(questions.get(pos).option2);
+                opt3.setText(questions.get(pos).option3);
+                opt4.setText(questions.get(pos).option4);
+                color_one.setBackgroundResource(R.drawable.rectangle_solid);
+                color_two.setBackgroundResource(R.drawable.rectangle_solid);
+                color_three.setBackgroundResource(R.drawable.rectangle_solid);
+                color_four.setBackgroundResource(R.drawable.rectangle_solid);
+            }
+        });
+        next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(pos!=questions.size()-1)
+                    pos++;
+                quest.setText(questions.get(pos).ques);
+                opt1.setText(questions.get(pos).option1);
+                opt2.setText(questions.get(pos).option2);
+                opt3.setText(questions.get(pos).option3);
+                opt4.setText(questions.get(pos).option4);
+                color_one.setBackgroundResource(R.drawable.rectangle_solid);
+                color_two.setBackgroundResource(R.drawable.rectangle_solid);
+                color_three.setBackgroundResource(R.drawable.rectangle_solid);
+                color_four.setBackgroundResource(R.drawable.rectangle_solid);
+            }
+        });
+
+        share.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String shareBody = "Hey check out this question \n\n"+questions.get(pos).ques+"\n\n"+questions.get(pos).option1+
+                        "\n\n"+questions.get(pos).option2+"\n\n"+questions.get(pos).option3+"\n\n"+questions.get(pos).option4;
+                Intent sharing=new Intent(Intent.ACTION_SEND);
+                sharing.setType("text/plain");
+                sharing.putExtra(android.content.Intent.EXTRA_SUBJECT, "Prepare aptitude and for interviews");
+
+                sharing.putExtra(android.content.Intent.EXTRA_TEXT, shareBody);
+                try {
+                    startActivity(Intent.createChooser(sharing, "Share via"));
+                }
+                catch (ActivityNotFoundException e)
+                {
+                    Toast.makeText(getActivity().getApplication(),"There is no email/message client in your device",Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+
+        one.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(questions.get(pos).answer.equalsIgnoreCase(questions.get(pos).option1))
+                {
+                    color_one.setBackgroundColor(Color.parseColor("#52919A"));
+                }
+                else
+                {
+                    color_one.setBackgroundColor(Color.parseColor("#FFD25239"));
+                }
+            }
+        });
+        two.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(questions.get(pos).answer.equalsIgnoreCase(questions.get(pos).option2))
+                {
+                    color_two.setBackgroundColor(Color.parseColor("#52919A"));
+                }
+                else
+                {
+                    color_two.setBackgroundColor(Color.parseColor("#FFD25239"));
+                }
+            }
+        });
+        three.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(questions.get(pos).answer.equalsIgnoreCase(questions.get(pos).option3))
+                {
+                    color_three.setBackgroundColor(Color.parseColor("#52919A"));
+                }
+                else
+                {
+                    color_three.setBackgroundColor(Color.parseColor("#FFD25239"));
+                }
+            }
+        });
+        four.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(questions.get(pos).answer.equalsIgnoreCase(questions.get(pos).option4))
+                {
+                    color_four.setBackgroundColor(Color.parseColor("#52919A"));
+                }
+                else
+                {
+                    color_four.setBackgroundColor(Color.parseColor("#FFD25239"));
+                }
+            }
+        });
         return v;
     }
 
     @Override
     public void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        XmlPullParserFactory xmlPullParserFactory;
+        Bundle b=getArguments();
+        topic=b.getString("topic");
+        myDatabase_question=new MyDatabase_question(getActivity());
+        questions=myDatabase_question.getQuestions(topic.toUpperCase());
+
+      /*  XmlPullParserFactory xmlPullParserFactory;
         try {
             xmlPullParserFactory=XmlPullParserFactory.newInstance();
             XmlPullParser xmlPullParser=xmlPullParserFactory.newPullParser();
@@ -73,10 +215,10 @@ public class Question extends Fragment {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
-        }
+        }*/
     }
 
-    private ArrayList<QuestionData> parseXml(XmlPullParser xmlPullParser) throws
+    /*private ArrayList<QuestionData> parseXml(XmlPullParser xmlPullParser) throws
             XmlPullParserException,IOException
     {
         ArrayList<QuestionData> quest=null;
@@ -128,5 +270,5 @@ public class Question extends Fragment {
         }
         return quest;
 
-    }
+    }*/
 }
